@@ -1,0 +1,252 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Netflix Pass</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!--link rel="stylesheet" href="css/styles.css?v=1.0"-->
+
+  <style>
+              body {margin: 5% auto; background: #f2f2f2; color: #444444; font-family: 'Courier New'; font-size: 14px; line-height: 1.6; text-shadow: 0 1px 0 #ffffff; max-width: 73%;}
+              code {background: white;}
+              a {border-bottom: 1px solid #444444; color: #444444; text-decoration: none;}
+              a:hover {border-bottom: 0;}
+              h1, h2, h3, h4, p{line-height: 1.3; text-align: center;}
+              button {margin: 5px; font-family: 'Courier New'; background-color: #000; color: #fff; border-color: #000; cursor: pointer;}
+  </style>
+
+</head>
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+
+  <h1>Welcome to a world of entertainment.</h1>
+  <h3>To choose a specific category of Netflix content, choose from the list below!</h3>
+  <p>Styling not final. Search functionality is a work in progress and not in this build.</p>
+  <p>Designed and created by Josh Cawthorne.</p>
+
+  </br>
+
+  <button id="1365" onclick="selection = (this.id), setupCategory()">Action and Adventure</button>
+  <button id="43040" onclick="selection = (this.id), setupCategory()">Action Comedies</button>
+  <button id="1568" onclick="selection = (this.id), setupCategory()">Action Sci-Fi and Fantasy</button>
+  <button id="43048" onclick="selection = (this.id), setupCategory()">Action Thrillers</button>
+  <button id="11881" onclick="selection = (this.id), setupCategory()">Adult Animation</button>
+  <button id="7442" onclick="selection = (this.id), setupCategory()">Adventures</button>
+  <button id="3761" onclick="selection = (this.id), setupCategory()">African Movies</button>
+  <button id="3327" onclick="selection = (this.id), setupCategory()">Alien Sci-Fi</button>
+  <button id="5507" onclick="selection = (this.id), setupCategory()">Animal Tales</button>
+  <button id="7424" onclick="selection = (this.id), setupCategory()">Anime</button>
+  <button id="2653" onclick="selection = (this.id), setupCategory()">Anime Action</button>
+  <button id="9302" onclick="selection = (this.id), setupCategory()">Anime Comedies</button>
+  <button id="452" onclick="selection = (this.id), setupCategory()">Anime Dramas</button>
+  <button id="11146" onclick="selection = (this.id), setupCategory()">Anime Fantasy</button>
+  <button id="3063" onclick="selection = (this.id), setupCategory()">Anime Features</button>
+  <button id="10695" onclick="selection = (this.id), setupCategory()">Anime Horror</button>
+  <button id="2729" onclick="selection = (this.id), setupCategory()">Anime Sci-Fi</button>
+  <button id="6721" onclick="selection = (this.id), setupCategory()">Anime Series</button>
+  <button id="29764" onclick="selection = (this.id), setupCategory()">Art House Movies</button>
+  <button id="77232" onclick="selection = (this.id), setupCategory()">Asian Action Movies</button>
+  <button id="5230" onclick="selection = (this.id), setupCategory()">Australian Movies</button>
+  <button id="819" onclick="selection = (this.id), setupCategory()">B-Horror Movies</button>
+  <button id="12339" onclick="selection = (this.id), setupCategory()">Baseball Movies</button>
+  <button id="12762" onclick="selection = (this.id), setupCategory()">Basketball Movies</button>
+  <button id="262" onclick="selection = (this.id), setupCategory()">Belgian Movies</button>
+  <button id="3652" onclick="selection = (this.id), setupCategory()">Biographical Docs</button>
+  <button id="3179" onclick="selection = (this.id), setupCategory()">Biographical Dramas</button>
+  <button id="12443" onclick="selection = (this.id), setupCategory()">Boxing Movies</button>
+  <button id="10757" onclick="selection = (this.id), setupCategory()">British Movies</button>
+  <button id="52117" onclick="selection = (this.id), setupCategory()">British TV Shows</button>
+  <button id="1252" onclick="selection = (this.id), setupCategory()">Campy Movies</button>
+  <button id="783" onclick="selection = (this.id), setupCategory()">Children and Family Movies</button>
+  <button id="3960" onclick="selection = (this.id), setupCategory()">Chinese Movies</button>
+  <button id="46574" onclick="selection = (this.id), setupCategory()">Classic Action and Adventure</button>
+  <button id="31694" onclick="selection = (this.id), setupCategory()">Classic Comedies</button>
+  <button id="29809" onclick="selection = (this.id), setupCategory()">Classic Dramas</button>
+  <button id="32473" onclick="selection = (this.id), setupCategory()">Classic Foreign Movies</button>
+  <button id="31574" onclick="selection = (this.id), setupCategory()">Classic Movies</button>
+  <button id="32392" onclick="selection = (this.id), setupCategory()">Classic Musicals</button>
+  <button id="31273" onclick="selection = (this.id), setupCategory()">Classic Romantic Movies</button>
+  <button id="47147" onclick="selection = (this.id), setupCategory()">Classic Sci-Fi and Fantasy</button>
+  <button id="46588" onclick="selection = (this.id), setupCategory()">Classic Thrillers</button>
+  <button id="46553" onclick="selection = (this.id), setupCategory()">Classic TV Shows</button>
+  <button id="48744" onclick="selection = (this.id), setupCategory()">Classic War Movies</button>
+  <button id="47465" onclick="selection = (this.id), setupCategory()">Classic Westerns</button>
+  <button id="6548" onclick="selection = (this.id), setupCategory()">Comedies</button>
+  <button id="10118" onclick="selection = (this.id), setupCategory()">Comic Book and Superhero</button>
+  <button id="1105" onclick="selection = (this.id), setupCategory()">Country and Western/Folk</button>
+  <button id="2748" onclick="selection = (this.id), setupCategory()">Courtroom Dramas</button>
+  <button id="6895" onclick="selection = (this.id), setupCategory()">Creature Features</button>
+  <button id="9584" onclick="selection = (this.id), setupCategory()">Crime Action and Adventure</button>
+  <button id="9875" onclick="selection = (this.id), setupCategory()">Crime Documentaries</button>
+  <button id="6889" onclick="selection = (this.id), setupCategory()">Crime Dramas</button>
+  <button id="10499" onclick="selection = (this.id), setupCategory()">Crime Thrillers</button>
+  <button id="26146" onclick="selection = (this.id), setupCategory()">Crime TV Shows</button>
+  <button id="9434" onclick="selection = (this.id), setupCategory()">Cult Comedies</button>
+  <button id="10944" onclick="selection = (this.id), setupCategory()">Cult Horror Movies</button>
+  <button id="7627" onclick="selection = (this.id), setupCategory()">Cult Movies</button>
+  <button id="4724" onclick="selection = (this.id), setupCategory()">Cult Sci-Fi and Fantasy</button>
+  <button id="74652" onclick="selection = (this.id), setupCategory()">Cult TV Shows</button>
+  <button id="869" onclick="selection = (this.id), setupCategory()">Dark Comedies</button>
+  <button id="45028" onclick="selection = (this.id), setupCategory()">Deep Sea Horror Movies</button>
+  <button id="67673" onclick="selection = (this.id), setupCategory()">Disney</button>
+  <button id="59433" onclick="selection = (this.id), setupCategory()">Disney Musicals</button>
+  <button id="6839" onclick="selection = (this.id), setupCategory()">Documentaries</button>
+  <button id="5763" onclick="selection = (this.id), setupCategory()">Dramas</button>
+  <button id="4961" onclick="selection = (this.id), setupCategory()">Dramas based on Books</button>
+  <button id="3653" onclick="selection = (this.id), setupCategory()">Dramas based on real life</button>
+  <button id="10606" onclick="selection = (this.id), setupCategory()">Dutch Movies</button>
+  <button id="5254" onclick="selection = (this.id), setupCategory()">Eastern European Movies</button>
+  <button id="10659" onclick="selection = (this.id), setupCategory()">Education for Kids</button>
+  <button id="52858" onclick="selection = (this.id), setupCategory()">Epics</button>
+  <button id="11079" onclick="selection = (this.id), setupCategory()">Experimental Movies</button>
+  <button id="26835" onclick="selection = (this.id), setupCategory()">Faith and Spirituality</button>
+  <button id="52804" onclick="selection = (this.id), setupCategory()">Faith and Spirituality Movies</button>
+  <button id="51056" onclick="selection = (this.id), setupCategory()">Family Features</button>
+  <button id="9744" onclick="selection = (this.id), setupCategory()">Fantasy Movies</button>
+  <button id="7687" onclick="selection = (this.id), setupCategory()">Film Noir</button>
+  <button id="72436" onclick="selection = (this.id), setupCategory()">Food and Travel TV</button>
+  <button id="12803" onclick="selection = (this.id), setupCategory()">Football Movies</button>
+  <button id="11828" onclick="selection = (this.id), setupCategory()">Foreign Action and Adventure</button>
+  <button id="4426" onclick="selection = (this.id), setupCategory()">Foreign Comedies</button>
+  <button id="5161" onclick="selection = (this.id), setupCategory()">Foreign Documentaries</button>
+  <button id="2150" onclick="selection = (this.id), setupCategory()">Foreign Dramas</button>
+  <button id="8243" onclick="selection = (this.id), setupCategory()">Foreign Gay and Lesbian Movies</button>
+  <button id="8654" onclick="selection = (this.id), setupCategory()">Foreign Horror Movies</button>
+  <button id="7462" onclick="selection = (this.id), setupCategory()">Foreign Movies</button>
+  <button id="6486" onclick="selection = (this.id), setupCategory()">Foreign Sci-Fi and Fantasy</button>
+  <button id="10306" onclick="selection = (this.id), setupCategory()">Foreign Thrillers</button>
+  <button id="58807" onclick="selection = (this.id), setupCategory()">French Movies</button>
+  <button id="31851" onclick="selection = (this.id), setupCategory()">Gangster Movies</button>
+  <button id="500" onclick="selection = (this.id), setupCategory()">Gay and Lesbian Dramas</button>
+  <button id="58886" onclick="selection = (this.id), setupCategory()">German Movies</button>
+  <button id="61115" onclick="selection = (this.id), setupCategory()">Greek Movies</button>
+  <button id="5349" onclick="selection = (this.id), setupCategory()">Historical Documentaries</button>
+  <button id="89585" onclick="selection = (this.id), setupCategory()">Horror Comedy</button>
+  <button id="8711" onclick="selection = (this.id), setupCategory()">Horror Movies</button>
+  <button id="11804" onclick="selection = (this.id), setupCategory()">Independent Action and Adventure</button>
+  <button id="4195" onclick="selection = (this.id), setupCategory()">Independent Comedies</button>
+  <button id="384" onclick="selection = (this.id), setupCategory()">Independent Dramas</button>
+  <button id="7077" onclick="selection = (this.id), setupCategory()">Independent Movies</button>
+  <button id="3269" onclick="selection = (this.id), setupCategory()">Independent Thrillers</button>
+  <button id="10463" onclick="selection = (this.id), setupCategory()">Indian Movies</button>
+  <button id="58750" onclick="selection = (this.id), setupCategory()">Irish Movies</button>
+  <button id="8211" onclick="selection = (this.id), setupCategory()">Italian Movies</button>
+  <button id="10398" onclick="selection = (this.id), setupCategory()">Japanese Movies</button>
+  <button id="10271" onclick="selection = (this.id), setupCategory()">Jazz and Easy Listening</button>
+  <button id="751423" onclick="selection = (this.id), setupCategory()">Kids Faith and Spirituality</button>
+  <button id="52843" onclick="selection = (this.id), setupCategory()">Kids Music</button>
+  <button id="27346" onclick="selection = (this.id), setupCategory()">Kids TV</button>
+  <button id="5685" onclick="selection = (this.id), setupCategory()">Korean Movies</button>
+  <button id="67879" onclick="selection = (this.id), setupCategory()">Korean TV Shows</button>
+  <button id="1402" onclick="selection = (this.id), setupCategory()">Late Night Comedies</button>
+  <button id="1613" onclick="selection = (this.id), setupCategory()">Latin American Movies</button>
+  <button id="10741" onclick="selection = (this.id), setupCategory()">Latin Music</button>
+  <button id="8985" onclick="selection = (this.id), setupCategory()">Martial Arts Movies</button>
+  <button id="6695" onclick="selection = (this.id), setupCategory()">Martial Arts, Boxing and Wrestling</button>
+  <button id="5875" onclick="selection = (this.id), setupCategory()">Middle Eastern Movies</button>
+  <button id="2125" onclick="selection = (this.id), setupCategory()">Military Action and Adventure</button>
+  <button id="4006" onclick="selection = (this.id), setupCategory()">Military Documentaries</button>
+  <button id="11" onclick="selection = (this.id), setupCategory()">Military Dramas</button>
+  <button id="25804" onclick="selection = (this.id), setupCategory()">Military TV Shows</button>
+  <button id="4814" onclick="selection = (this.id), setupCategory()">Miniseries</button>
+  <button id="26" onclick="selection = (this.id), setupCategory()">Mockumentaries</button>
+  <button id="947" onclick="selection = (this.id), setupCategory()">Monster Movies</button>
+  <button id="10056" onclick="selection = (this.id), setupCategory()">Movies based on Children's books</button>
+  <button id="6796" onclick="selection = (this.id), setupCategory()">Movies for ages 0 to 2</button>
+  <button id="6218" onclick="selection = (this.id), setupCategory()">Movies for ages 2 to 4</button>
+  <button id="5455" onclick="selection = (this.id), setupCategory()">Movies for ages 5 to 7</button>
+  <button id="561" onclick="selection = (this.id), setupCategory()">Movies for ages 8 to 10</button>
+  <button id="6962" onclick="selection = (this.id), setupCategory()">Movies for ages 11 to 12</button>
+  <button id="90361" onclick="selection = (this.id), setupCategory()">Music and Concert Documentaries</button>
+  <button id="1701" onclick="selection = (this.id), setupCategory()">Music</button>
+  <button id="13335" onclick="selection = (this.id), setupCategory()">Musicals</button>
+  <button id="9994" onclick="selection = (this.id), setupCategory()">Mysteries</button>
+  <button id="63782" onclick="selection = (this.id), setupCategory()">New Zeland Movies</button>
+  <button id="12123" onclick="selection = (this.id), setupCategory()">Period Pieces</button>
+  <button id="2700" onclick="selection = (this.id), setupCategory()">Political Comedies</button>
+  <button id="7018" onclick="selection = (this.id), setupCategory()">Political Documentaries</button>
+  <button id="6616" onclick="selection = (this.id), setupCategory()">Political Dramas</button>
+  <button id="10504" onclick="selection = (this.id), setupCategory()">Political Thrillers</button>
+  <button id="5505" onclick="selection = (this.id), setupCategory()">Psychological Thrillers</button>
+  <button id="36103" onclick="selection = (this.id), setupCategory()">Quirky Romance</button>
+  <button id="9833" onclick="selection = (this.id), setupCategory()">Reality TV</button>
+  <button id="10005" onclick="selection = (this.id), setupCategory()">Religious Documentaries</button>
+  <button id="3278" onclick="selection = (this.id), setupCategory()">Rock and Pop Concerts</button>
+  <button id="5475" onclick="selection = (this.id), setupCategory()">Romantic Comedies</button>
+  <button id="1255" onclick="selection = (this.id), setupCategory()">Romantic Dramas</button>
+  <button id="502675" onclick="selection = (this.id), setupCategory()">Romantic Favorites</button>
+  <button id="7153" onclick="selection = (this.id), setupCategory()">Romantic Foreign Movies</button>
+  <button id="9916" onclick="selection = (this.id), setupCategory()">Romantic Independent Movies</button>
+  <button id="8883" onclick="selection = (this.id), setupCategory()">Romantic Movies</button>
+  <button id="11567" onclick="selection = (this.id), setupCategory()">Russian</button>
+  <button id="6998" onclick="selection = (this.id), setupCategory()">Satanic Stories</button>
+  <button id="4922" onclick="selection = (this.id), setupCategory()">Satires</button>
+  <button id="9292" onclick="selection = (this.id), setupCategory()">Scandinavian Movies</button>
+  <button id="1492" onclick="selection = (this.id), setupCategory()">Sci-Fi and Fantasy</button>
+  <button id="6926" onclick="selection = (this.id), setupCategory()">Sci-Fi Adventure</button>
+  <button id="3916" onclick="selection = (this.id), setupCategory()">Sci-Fi Dramas</button>
+  <button id="1694" onclick="selection = (this.id), setupCategory()">Sci-Fi Horror Movies</button>
+  <button id="11014" onclick="selection = (this.id), setupCategory()">Sci-Fi Thrillers</button>
+  <button id="2595" onclick="selection = (this.id), setupCategory()">Science and Nature Documentaries</button>
+  <button id="52780" onclick="selection = (this.id), setupCategory()">Science and Nature TV</button>
+  <button id="9702" onclick="selection = (this.id), setupCategory()">Screwball Comedies</button>
+  <button id="5012" onclick="selection = (this.id), setupCategory()">Showbiz Dramas</button>
+  <button id="13573" onclick="selection = (this.id), setupCategory()">Showbiz Musicals</button>
+  <button id="53310" onclick="selection = (this.id), setupCategory()">Silent Musicals</button>
+  <button id="10256" onclick="selection = (this.id), setupCategory()">Slapstick Comedies</button>
+  <button id="8646" onclick="selection = (this.id), setupCategory()">Slasher and Serial Killer Movies</button>
+  <button id="12549" onclick="selection = (this.id), setupCategory()">Soccer Movies</button>
+  <button id="3675" onclick="selection = (this.id), setupCategory()">Social and Cultural Documentaries</button>
+  <button id="3947" onclick="selection = (this.id), setupCategory()">Social Issue Dramas</button>
+  <button id="9196" onclick="selection = (this.id), setupCategory()">Southeast Asian Movies</button>
+  <button id="58741" onclick="selection = (this.id), setupCategory()">Spanish Movies</button>
+  <button id="2760" onclick="selection = (this.id), setupCategory()">Spiritual Documentaries</button>
+  <button id="9327" onclick="selection = (this.id), setupCategory()">Sports and Fitness</button>
+  <button id="5286" onclick="selection = (this.id), setupCategory()">Sports Comedies</button>
+  <button id="180" onclick="selection = (this.id), setupCategory()">Sports Documentaries</button>
+  <button id="7243" onclick="selection = (this.id), setupCategory()">Sports dramas</button>
+  <button id="4370" onclick="selection = (this.id), setupCategory()">Sports Movies</button>
+  <button id="10702" onclick="selection = (this.id), setupCategory()">Spy Action and Adventure</button>
+  <button id="9147" onclick="selection = (this.id), setupCategory()">Spy Thrillers</button>
+  <button id="55774" onclick="selection = (this.id), setupCategory()">Stage Musicals</button>
+  <button id="11559" onclick="selection = (this.id), setupCategory()">Stand-up comedy</button>
+  <button id="35800" onclick="selection = (this.id), setupCategory()">Steamy Romantic Movies</button>
+  <button id="972" onclick="selection = (this.id), setupCategory()">Steamy Thrillers</button>
+  <button id="42023" onclick="selection = (this.id), setupCategory()">Supernatural Horror Movies</button>
+  <button id="11140" onclick="selection = (this.id), setupCategory()">Supernatural Thrillers</button>
+  <button id="6384" onclick="selection = (this.id), setupCategory()">Tearjerkers</button>
+  <button id="3519" onclick="selection = (this.id), setupCategory()">Teen Comedies</button>
+  <button id="9299" onclick="selection = (this.id), setupCategory()">Teen Dramas</button>
+  <button id="52147" onclick="selection = (this.id), setupCategory()">Teen Screams</button>
+  <button id="60951" onclick="selection = (this.id), setupCategory()">Teen TV Shows</button>
+  <button id="8933" onclick="selection = (this.id), setupCategory()">Thrillers</button>
+  <button id="1159" onclick="selection = (this.id), setupCategory()">Travel and Adventure Documentaries</button>
+  <button id="10673" onclick="selection = (this.id), setupCategory()">TV Action and Adventure</button>
+  <button id="11177" onclick="selection = (this.id), setupCategory()">TV Cartoons</button>
+  <button id="10375" onclick="selection = (this.id), setupCategory()">TV Comedies</button>
+  <button id="10105" onclick="selection = (this.id), setupCategory()">TV Documentaries</button>
+  <button id="11714" onclick="selection = (this.id), setupCategory()">TV Dramas</button>
+  <button id="83059" onclick="selection = (this.id), setupCategory()">TV Horror</button>
+  <button id="4366" onclick="selection = (this.id), setupCategory()">TV Mysteries</button>
+  <button id="1372" onclick="selection = (this.id), setupCategory()">TV Sci-fi and Fantasy</button>
+  <button id="83" onclick="selection = (this.id), setupCategory()">TV Shows</button>
+  <button id="9472" onclick="selection = (this.id), setupCategory()">Urban and Dance Concerts</button>
+  <button id="75804" onclick="selection = (this.id), setupCategory()">Vampire Horror Movies</button>
+  <button id="75930" onclick="selection = (this.id), setupCategory()">Werewolf Horror Movies</button>
+  <button id="7700" onclick="selection = (this.id), setupCategory()">Westerns</button>
+  <button id="2856" onclick="selection = (this.id), setupCategory()">World Music Concerts</button>
+  <button id="75405" onclick="selection = (this.id), setupCategory()">Zombie Horror Movies</button>
+
+  </br>
+  </br>
+  <p>If you haven't found a category you're interested in, you should probably cancel your subscription.</p>
+
+</body>
+</html>
