@@ -6,3 +6,7 @@ function setupCategory() {
   var win = window.open(genreUrl);
     win.focus();
 }
+
+function search() {
+
+}
